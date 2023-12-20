@@ -6,15 +6,15 @@ source script/env.sh
 
 cd $EXTERNAL_LIBS_BUILD_ROOT
 
-url="https://github.com/m2049r/monero"
-version="release-v0.16.0.0-monerujo"
+url="https://github.com/MoreloNetwork/morelo"
+version="master"
 
-if [ ! -d "monero" ]; then
+if [ ! -d "morelo" ]; then
   git clone ${url} -b ${version}
-  cd monero
+  cd morelo
   git submodule update --recursive --init
 else
-  cd monero
+  cd morelo
   git checkout ${version}
   git pull
   git submodule update --recursive --init
