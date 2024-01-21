@@ -6,8 +6,8 @@ source script/env.sh
 
 TARGET_DIR=$EXTERNAL_LIBS_ROOT/boost
 
-version=1_58_0
-dot_version=1.58.0
+version=1_73_0
+dot_version=1.73.0
 
 cd $EXTERNAL_LIBS_BUILD_ROOT/boost_${version}
 
